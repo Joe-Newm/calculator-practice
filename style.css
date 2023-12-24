@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family:sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 body {
@@ -20,29 +20,65 @@ body {
   align-content: space-evenly;
   padding: 20px;
   border: 1px solid;
+  border-radius: 20px;
+  display: inline-grid;
+  background-color: black;
 }
 
 .screen {
+  padding: 0px;
+  
+  margin-bottom: 0px;
+  font-size: 1em;
+  height: 3vh;
+  color: rgba(255, 255, 255, 1);
   border: 1px solid;
-  padding: 20px;
-  width: 20em;
-  margin-bottom: 20px;
+}
+.screen2 {
+  border:  1px solid;
+  color: white;
+  height: 7vh;
+  margin-bottom: 10px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   align-items: center;
-  justify-content: space-evenly;
   justify-items: center;
   width: 100%;
   border: 1px solid;
+  height: 250px;
+  gap: 15px;
+  
 }
 
-.btn {
-  height: 40px;
-  width: 60px;
-  margin: 10px;
-  font-size: 2em;
+.grid-container > button {
+  height: 50px;
+  width: 50px;
+  font-size: 1.5em;
+  background-color: gray;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color:rgba(255, 255, 255, 1)
 }
+.grid-container > button.operator {
+  height: 50px;
+  width: 50px;
+  font-size: 1.5em;
+  background-color: rgb(81, 104, 207);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color:rgba(255, 255, 255, 1)
+}
+
+
+
+
+
+
+
+
